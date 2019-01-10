@@ -86,7 +86,6 @@ class MenuViewController : UIViewController {
 extension UIButton {
     
     func pulsate() {
-        
         let pulse = CASpringAnimation(keyPath: "transform.scale")
         pulse.duration = 0.6
         pulse.fromValue = 0.95
