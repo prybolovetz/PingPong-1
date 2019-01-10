@@ -1,15 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DtL-Xq-77c">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="wo3-yw-3x4">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="DtL-Xq-77c" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="orR-rZ-abq">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ZLA-Tj-TFg" kind="relationship" relationship="rootViewController" id="VwX-iw-wJS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L05-Nj-lYe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1534" y="134"/>
+        </scene>
+        <!--Menu View Controller-->
+        <scene sceneID="ioY-5A-5dW">
+            <objects>
+                <viewController id="ZLA-Tj-TFg" customClass="MenuViewController" customModule="PingPong" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="16K-nj-AEr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="HOC-eY-rU6">
+                                <rect key="frame" x="57" y="75" width="261" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="0bz-73-Opz"/>
+                                    <constraint firstAttribute="width" constant="261" id="3nd-26-kir"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSQ-BB-s2g">
+                                <rect key="frame" x="137" y="383" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="pYU-BF-XuN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <state key="normal" title="Easy"/>
+                                <connections>
+                                    <action selector="Easy:" destination="ZLA-Tj-TFg" eventType="touchUpInside" id="16C-hc-uCF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pfz-sY-rtr">
+                                <rect key="frame" x="137" y="431" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="GLA-Co-Wap"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <state key="normal" title="Medium"/>
+                                <connections>
+                                    <action selector="Medium:" destination="ZLA-Tj-TFg" eventType="touchUpInside" id="jvu-zL-TYk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="als-Zc-8pK">
+                                <rect key="frame" x="137" y="479" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="rfK-39-uOn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <state key="normal" title="Hard"/>
+                                <connections>
+                                    <action selector="Hard:" destination="ZLA-Tj-TFg" eventType="touchUpInside" id="VG7-16-gde"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eak-07-YPC">
+                                <rect key="frame" x="107" y="283" width="166" height="54"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="32"/>
+                                <state key="normal" title="2 player"/>
+                                <connections>
+                                    <action selector="Player2:" destination="ZLA-Tj-TFg" eventType="touchUpInside" id="IWs-xD-d3O"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RaG-LI-u64" firstAttribute="trailing" secondItem="eak-07-YPC" secondAttribute="trailing" constant="102" id="3aQ-gj-Yrr"/>
+                            <constraint firstItem="wSQ-BB-s2g" firstAttribute="top" secondItem="eak-07-YPC" secondAttribute="bottom" constant="46" id="62H-45-caO"/>
+                            <constraint firstItem="wSQ-BB-s2g" firstAttribute="trailing" secondItem="Pfz-sY-rtr" secondAttribute="trailing" id="6mc-hu-bjf"/>
+                            <constraint firstItem="als-Zc-8pK" firstAttribute="top" secondItem="Pfz-sY-rtr" secondAttribute="bottom" constant="8" symbolic="YES" id="7E2-oD-vXe"/>
+                            <constraint firstItem="Pfz-sY-rtr" firstAttribute="trailing" secondItem="als-Zc-8pK" secondAttribute="trailing" id="9Lx-5r-Q9T"/>
+                            <constraint firstItem="HOC-eY-rU6" firstAttribute="top" secondItem="RaG-LI-u64" secondAttribute="top" constant="55" id="IJW-0R-TOf"/>
+                            <constraint firstItem="RaG-LI-u64" firstAttribute="trailing" secondItem="HOC-eY-rU6" secondAttribute="trailing" constant="57" id="cfZ-L0-N6V"/>
+                            <constraint firstItem="HOC-eY-rU6" firstAttribute="leading" secondItem="RaG-LI-u64" secondAttribute="leading" constant="57" id="dv4-Lh-T6b"/>
+                            <constraint firstItem="wSQ-BB-s2g" firstAttribute="leading" secondItem="RaG-LI-u64" secondAttribute="leading" constant="137" id="h7j-CO-h41"/>
+                            <constraint firstItem="Pfz-sY-rtr" firstAttribute="top" secondItem="wSQ-BB-s2g" secondAttribute="bottom" constant="8" symbolic="YES" id="mA5-bM-gFI"/>
+                            <constraint firstItem="Pfz-sY-rtr" firstAttribute="leading" secondItem="als-Zc-8pK" secondAttribute="leading" id="oNr-7L-lP4"/>
+                            <constraint firstItem="wSQ-BB-s2g" firstAttribute="leading" secondItem="Pfz-sY-rtr" secondAttribute="leading" id="uHA-uL-9zW"/>
+                            <constraint firstItem="eak-07-YPC" firstAttribute="leading" secondItem="RaG-LI-u64" secondAttribute="leading" constant="107" id="uog-VM-OS2"/>
+                            <constraint firstItem="wSQ-BB-s2g" firstAttribute="centerX" secondItem="HOC-eY-rU6" secondAttribute="centerX" id="viR-Ar-HU5"/>
+                            <constraint firstItem="eak-07-YPC" firstAttribute="top" secondItem="HOC-eY-rU6" secondAttribute="bottom" constant="80" id="wM9-oI-atA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RaG-LI-u64"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yJy-5n-bZ1"/>
+                    <connections>
+                        <outletCollection property="buttons" destination="eak-07-YPC" collectionClass="NSMutableArray" id="hOJ-V5-2Dw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8wL-he-Wpe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-711.20000000000005" y="133.5832083958021"/>
+        </scene>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="gameVC" id="BV1-FR-VrT" customClass="GameViewController" customModule="PingPong" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,6 +124,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="156" y="134"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo" width="800" height="400"/>
+    </resources>
 </document>
