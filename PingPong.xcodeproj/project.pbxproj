@@ -20,6 +20,7 @@
 		0D14AF9F21E7E79B000BED2D /* Background.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0D14AF9E21E7E79B000BED2D /* Background.mp3 */; };
 		0D14AFA121E7E90B000BED2D /* Insanibu.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D14AFA021E7E90B000BED2D /* Insanibu.ttf */; };
 		0D14AFA321E7EA0B000BED2D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D14AFA221E7EA0B000BED2D /* MenuViewController.swift */; };
+		0D8EC67321EA929C00CE0312 /* Starfield.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0D8EC67221EA929C00CE0312 /* Starfield.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		0D14AF9E21E7E79B000BED2D /* Background.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Background.mp3; sourceTree = "<group>"; };
 		0D14AFA021E7E90B000BED2D /* Insanibu.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Insanibu.ttf; sourceTree = "<group>"; };
 		0D14AFA221E7EA0B000BED2D /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		0D8EC67221EA929C00CE0312 /* Starfield.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Starfield.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,18 +111,18 @@
 		0D14AF6721E7E6A4000BED2D /* PingPong */ = {
 			isa = PBXGroup;
 			children = (
+				0D8EC66D21EA914500CE0312 /* New Group */,
 				0D14AF6821E7E6A4000BED2D /* AppDelegate.swift */,
 				0D14AF6A21E7E6A4000BED2D /* GameScene.sks */,
 				0D14AF6C21E7E6A4000BED2D /* Actions.sks */,
+				0D8EC67221EA929C00CE0312 /* Starfield.sks */,
 				0D14AF6E21E7E6A4000BED2D /* GameScene.swift */,
 				0D14AF7021E7E6A4000BED2D /* GameViewController.swift */,
 				0D14AFA221E7EA0B000BED2D /* MenuViewController.swift */,
 				0D14AF7221E7E6A4000BED2D /* Main.storyboard */,
 				0D14AF7721E7E6AA000BED2D /* LaunchScreen.storyboard */,
-				0D14AF7521E7E6AA000BED2D /* Assets.xcassets */,
-				0D14AF9C21E7E6CA000BED2D /* Music */,
-				0D14AF9D21E7E6DF000BED2D /* Fonts */,
 				0D14AF7A21E7E6AA000BED2D /* Info.plist */,
+				0D8EC66F21EA914C00CE0312 /* Supporting Files */,
 			);
 			path = PingPong;
 			sourceTree = "<group>";
@@ -157,6 +159,23 @@
 				0D14AFA021E7E90B000BED2D /* Insanibu.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		0D8EC66D21EA914500CE0312 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		0D8EC66F21EA914C00CE0312 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D14AF7521E7E6AA000BED2D /* Assets.xcassets */,
+				0D14AF9D21E7E6DF000BED2D /* Fonts */,
+				0D14AF9C21E7E6CA000BED2D /* Music */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D14AF9F21E7E79B000BED2D /* Background.mp3 in Resources */,
+				0D8EC67321EA929C00CE0312 /* Starfield.sks in Resources */,
 				0D14AF7421E7E6A4000BED2D /* Main.storyboard in Resources */,
 				0D14AF6B21E7E6A4000BED2D /* GameScene.sks in Resources */,
 				0D14AFA121E7E90B000BED2D /* Insanibu.ttf in Resources */,
